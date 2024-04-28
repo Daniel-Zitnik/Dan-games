@@ -1,0 +1,26 @@
+.gamesBtns {
+	width: 747px;
+	text-align: left;
+	margin: 50px auto 0;
+}
+
+.btn {
+	display: inline-block;
+	background: #a00909;
+	color: #ddd;
+	text-align: center;
+	font-size: 30px;
+	text-decoration: none;
+	cursor: pointer;
+	padding: 10px 50px;
+	margin: 10px;
+	min-width: 250px;
+	border-radius: 2px;
+}
+
+.btn:hover,
+.btn:focus {
+	background: #e00d0d;
+	color: #ddd;
+	transition: background-color 0.3s ease;
+}

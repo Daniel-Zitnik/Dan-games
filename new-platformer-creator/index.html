@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/games.css">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&display=swap" rel="stylesheet">
+	<title>New platformer creator</title>
+</head>
+<body>
+	<header>
+		<div class="container">		
+			<h1><a href="../"><span id="l1">DAN</span><span id="l2">GAMES</span></a></h1>
+			<nav>
+				<ul class="navMenu">
+					<li><a href="../" id="nav-selected">games</a></li>
+					<li><a href="../about/">about</a></li>
+					<li><a href="../news/">news</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<div class="game">
+			<div id="dangame">
+				<button onclick="startDanGame()" id="dangameButton">Play</button>
+			</div>
+			<script src="../danLibrary/danLibrary.js"></script>
+			<script src="game-code/main.js"></script>
+			<script src="game-code/menu.js"></script>
+			<script src="game-code/player.js"></script>
+			<script src="game-code/gameUpdate.js"></script>
+			<script src="game-code/createBlock.js"></script>
+		</div>
+	</main>
+
+	<footer>
+		<p>© 2020 - 2021 Dan games</p>
+	</footer>
+</body>
+</html>

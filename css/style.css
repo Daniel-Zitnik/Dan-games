@@ -1,0 +1,150 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: #151515;
+	color: #dddddd;
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 16px;
+}
+
+header {
+	text-align: left;
+	background: #242424;
+	margin-bottom: 20px;
+	height: 65px;
+	width: 100%;
+	display: block;
+	position: fixed;
+	box-shadow: 0 0 10px #000;
+	border-bottom: #353535 solid 1px;
+}
+
+header .container {
+	margin: 0 3%;
+	max-width: 100%;
+	width: 94%;
+}
+
+h1 {
+	display: inline-block;
+	font-size: 40px;
+	margin: 0;
+	padding-top: 7px;
+}
+
+#l1 {
+	color: #a00909;
+}
+
+#l2 {
+	color: #ddd;
+	padding-left: 5px;
+}
+
+nav {
+	display: block;
+	float: right;
+	font-size: 22px;
+}
+
+.navMenu {
+	display: flex;
+	justify-content: flex-end;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.navMenu li {
+	display: inline-block;
+	margin-top: 18px;
+	height: 30px;
+}
+
+.navMenu a {
+	display: block;
+	padding: 0 20px;
+	text-align: center;
+	text-decoration: none;
+	color: #ddd;
+	text-transform: uppercase;
+}
+
+.navMenu li:not(:last-child) {
+	border-right: #ddd solid 1px;
+}
+
+#nav-selected {
+	color: #a00909;
+	font-weight: 600;
+}
+
+.navMenu a:hover,
+.navMenu a:focus {
+	color: #e00d0d !important;
+}
+
+::selection {
+	background: #a00909;
+	color: #ddd;
+	text-shadow: none;
+}
+
+.btn::selection {
+	background: #ddd;
+	color: #222;
+	text-shadow: none;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+main {
+	margin-top: 65px;
+	padding-bottom: 20px;
+}
+
+a {
+	color: #a00909;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus {
+	color: #e00d0d;
+}
+
+footer {
+	background: #0d0d0d;
+	display: flex;
+	align-self: flex-end;
+	margin-top: auto;
+	width: 100%;
+	border-top: #353535 solid 1px;
+}
+
+footer p {
+	width: 100%;
+	text-align: center;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #151515;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #999;
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #777;
+}

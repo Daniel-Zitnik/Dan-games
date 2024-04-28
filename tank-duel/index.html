@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+	<link rel="icon" href="../favicon.ico" sizes="16x16" type="image/png">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/new-game.css">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <title>Tank duel</title>
+</head>
+<body>
+	<header>
+		<div class="container">		
+			<h1><a href="../"><span id="l1">DAN</span><span id="l2">GAMES</span></a></h1>
+			<nav>
+				<ul class="navMenu">
+					<li><a href="../" id="nav-selected">games</a></li>
+					<li><a href="../about/">about</a></li>
+					<li><a href="../news/">news</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<main>
+		<div class="game" style="width: 960px; height: 540px">
+			<div id="dangame">
+				<button onclick="startDanGame()" id="dangameButton">Play</button>
+			</div>
+			<script src="../danLibrary/danLibrary.js"></script>
+			<script src="game.js"></script>
+		</div>
+
+		<div class="manual">
+			<h2>Tank Duel</h2>
+			<h3>Controls of blue</h3>
+			<ul>
+				<li>press arrow keys to move</li>
+				<li>press M or 0 to shot</li>
+				<li>press N or 1 to launch a missile, press againg to deploy it</li>
+			</ul>
+
+			<h3>Controls of red</h3>
+			<ul>
+				<li>press WASD to move</li>
+				<li>press SPACE to shot</li>
+				<li>press C to to launch a missile, press againg to deploy it</li>
+			</ul>
+			<h3>Controls</h3>
+			<ul>
+				<li>press ESC to pause the game</li>
+			</ul>
+
+			<h3>about game</h3>
+			<ul>
+				<li>the tank has the task of destroying the other tank</li>
+				<li>missiles can go through walls unlike tanks and bullets</li>
+				<li>lives are displayed above the tank, if not, the tank has full lives</li>
+				<li>bullets and missiles can destroy wooden boxes</li>
+				<li>oil slows down the tank</li>
+			</ul>
+
+			<h3>version list</h3>
+			<ul>
+				<li>2.0 - map select, wooden box, oil, fullscreen, new design, better missile</li>
+				<li>1.5 - pause, bug fix</li>
+				<li>1.4 - settings</li>
+				<li>1.3 - bombs</li>
+				<li>1.2 - bullets bounce, music and sound effects</li>
+				<li>1.1 - menu</li>
+				<li>1.0 - game released</li>
+			</ul>
+		</div>
+	</main>
+
+	<footer>
+		<p>© 2020 - 2021 Dan games</p>
+	</footer>
+</body>
+</html>

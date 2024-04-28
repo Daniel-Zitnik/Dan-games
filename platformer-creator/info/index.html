@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="../../favicon.ico" sizes="16x16" type="image/png">
+	<link rel="stylesheet" type="text/css" href="../../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../../css/info.css">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;700&display=swap" rel="stylesheet">
+	<title>Info</title>
+</head>
+<body>
+	<header>
+		<div class="container">		
+			<h1><a href="../../"><span id="l1">DAN</span><span id="l2">GAMES</span></a></h1>
+			<nav>
+				<ul class="navMenu">
+					<li><a href="../../" id="nav-selected">games</a></li>
+					<li><a href="../../about/">about</a></li>
+					<li><a href="../../news/">news</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+    <main>
+		<h2>Platformer creator informations</h2>
+
+		<div class="contents">
+			<h4>Contents</h4>
+			<ol>
+				<li><a href="#aboutGame">About game</a></li>
+				<li><a href="#versionList">Version list</a></li>
+				<li>
+					<a href="#blocksInfo">Blocks info</a>
+					<p>
+						3.1. <a href="#walls">Walls</a><br>
+						3.2. <a href="#hazard">Hazard</a><br>
+						3.3. <a href="#decorations">Decorations</a><br>
+						3.4. <a href="#other">Other</a><br>
+					</p>
+			</li>
+				<li><a href="#credits">Credits</a></li>
+			</ol>
+		</div>
+		
+		<h3 id="aboutGame">About game</h3>
+		<p>Platformer creator is a strolling platformer game, where the player's goal is to get to the exit of the level. 
+			On the way to the goal, the player must overcome all obstacles. 
+			In this game you can easily create your own level with different types of obstacles in a few minutes!
+			The levels you create are stored in local storage, so you don't have to worry about losing them.
+			You can share your levels with others and play player's levels.
+		</p>
+		
+		<h4>get started</h4>
+		<ul>
+			<li>open platformer creator and click on the <strong>New game</strong> button</li>
+			<li>Name your platformer and click on the <strong>Create game</strong> button</li>
+			<li>and building can begin, the game has 80 different blocks that you can discover and build your own platformer from them</li>
+			<li>scroll the mouse to change block</li>
+			<li>press SPACE or click on the <strong>Play</strong> button to test part of your platformer</li>
+			<li>press ESC to pause the game and click on <strong>Test level</strong> button to test your level</li>
+			<li>if you have completed your platformer, press ESC and click on the <strong>New level</strong> button to create new level</li>
+			<li>load your platformer by click on the <strong>Load game</strong> button and chose the platformer you want to play or edit</li>
+			<li>there is also example platformer, that has 8 levels, this platformer is created by me, i recommend play it, you will find here how work the different blocks</li>
+		</ul>
+
+		<h4>Code</h4>
+		<ul>
+			<li>open platformer creator and click on the <strong>Play game</strong> button to play a platformer by using code</li>
+			<li>them paste the code (CTRL+V) and click on the <strong>Play</strong> button</li>
+			<li>play the other players platformers and have fun!</li>
+			<li>you can share your platformer with other players</li>
+			<li>chose your track or level, them click on the <strong>Get code</strong> button</li>
+			<li>press CTRL+C to copy the code and share it with your friends</li>
+		</ul>
+
+		<h4>player</h4>
+		<ul>
+			<li>player have only 1 hp</li>
+			<li>if player die, he spawn on checkpoint position or on start position</li>
+			<li>player have 5 animations: front, walk, jump, crouch, die</li>
+			<li>normal moving speed: 8 blocks/s (400px/s)</li>
+			<li>moving speed in water: 6 blocks/s (300px/s)</li>
+			<li>moving speed on snow: 4 blocks/s (200px/s)</li>
+			<li>moving speed on ice: 10 blocks/s (500px/s)</li>
+			<li>jump 3 blocks height</li>
+			<li>can't jump on snow</li>
+			<li>if touches trampoline, he jump 6 blocks height</li>
+		</ul>
+		
+		<!-- <h4>useless facts</h4>
+		<ul>
+			<li>the game is programmed in javascript with libraries p5.js and p5.play</li>
+			<li>game script has more than 4400 lines of code</li>
+			<li>I started programing this game on 10th November 2020</li>
+			<li>from version pre-alpha 1.2 to pre-alpha 1.5, game had minecraft textures</li>
+			<li>The game was supposed to have the same color as the sky, but because  ice and water was bad to see, game has a darker shade of the sky</li>
+		</ul> -->
+
+		<h3 id="versionList">version list</h3>
+		<h4>pre-alpha</h4>
+		<ul>
+			<li>1.0 - strolling platformer engine</li>
+			<li>1.1 - walls</li>
+			<li>1.2 - new textures, eraser</li>
+			<li>1.3 - 2 modes - play and creator</li>
+			<li>1.4 - lava</li>
+			<li>1.5 - check points</li>
+		</ul>
+		<h4>alpha</h4>
+		<ul>
+			<li>1.0 - new textures, falling block, trampoline</li>
+			<li>1.1 - ladder, ice, water</li>
+			<li>1.2 - grass, dirt, snow, stone, snow tundra, tundra</li>
+			<li>1.3 - sign right, sign left, sign exit, bush, plant, rock</li>
+			<li>1.4 - menu, pause, test level, start, exit</li>
+		</ul>
+		<h4>beta</h4>
+		<ul>
+			<li>1.0 - settings, save levels and tracks, test game, name tracks, select level, select track</li>
+			<li>1.1 - <strong>hazart update</strong> - spikes, half wall, wall spikes, saws, half saws, moving saws, moving half saws, stoppers, types, fire bars, rotating saws, pulling spikes, stomps, half stoppers, slimes, level code and track code</li>
+			<li>1.1.1 - <strong>bug fix</strong> - player animations, pause, stomps in water, level select, <strong>example track</strong>, <strong>tracks order</strong> - from newest to oldest by played or edited</li>
+			<li>1.2 - <strong>winter update</strong> - big game optimization, sticky block, bounce block, purple plant, yellow falling block, red falling block, snow spike, little spike, big spike, blue/red switch, blue block, red block, timed block, green button, green block, dotted block, bridge, booster, arrow, half lift, lift, bridge lift, ruby, weight, chain, one way wall, green cane, red cane, frozen tree, frozen plant, snow rock, snow hill, big green cane, big red cane, small snowy pile, snowy pile, swim animation, climb animation, squeezing the player, trampoline animation, inventory, player animations fix, slime kill fix, player running, info text, show hitboxes, slimes in water, new example levels</li>
+		</ul>
+		<h4>future</h4>
+		<p>it's just an estimate</p>
+		<ul>
+			<li>1.3 - <strong>biomes & decorations update</strong></li>
+			<li>1.4 - <strong>enemies update</strong></li>
+		</ul>
+
+		<h4>Newest versions</h4>
+		<ul>
+			<li><a href="../../latest-platformer-creator/">Unfinished version beta 1.2</a></li>
+			<li><a href="../../new-platformer-creator/">New platformer creator</a></li>
+		</ul>
+		
+		<h3 id="blocksInfo">Blocks info</h3>
+		<h4>eraser</h4>
+		<ul>
+			<li>deletes the block you click on</li>
+			<li>added in version: pre-alpha 1.2</li>
+			<li>id: 2</li>
+		</ul>
+
+		<h4 class="blockGroup" id="walls">Walls</h4>
+		<ul>
+			<li>block which the player doesn't pass</li>
+		</ul>
+
+		<h4>metal</h4>
+		<ul>
+			<li>added in version: pre-alpha 1.1</li>
+			<li>id: 1</li>
+		</ul>
+
+		<h4>falling block</h4>
+		<ul>
+			<li>when the player touches it, the block goes down</li>
+			<li>if the player stops touching it, the block stops falling</li>
+			<li>added in version: alpha 1.0</li>
+			<li>id: 5</li>
+		</ul>
+
+		<h4>ice</h4>
+		<ul>
+			<li>the block is slippery and the player is faster on it</li>
+			<li>added in version: alpha 1.1</li>
+			<li>changed texture in beta 1.2</li>
+			<li>id: 8</li>
+		</ul>
+
+		<h4>grass</h4>
+		<ul>
+			<li>it has 2 textures</li>
+			<li>added in version: alpha 1.2</li>
+			<li>id: 10</li>
+		</ul>
+
+		<h4>snow</h4>
+		<ul>
+			<li>it has 2 textures</li>
+			<li>added in version: alpha 1.2</li>
+			<li>id: 11</li>
+		</ul>
+
+		<h4>snow tundra</h4>
+		<ul>
+			<li>it has 2 textures</li>
+			<li>added in version: alpha 1.2</li>
+			<li>id: 12</li>
+		</ul>
+
+		<h4>sticky block</h4>
+		<ul>
+			<li>the player on this block can't jump and goes slowly</li>
+			<li>added in version: beta 1.2</li>
+			<li>id: 13</li>
+		</ul>
+
+		<h4>bounce block</h4>
+		<ul>
+			<li>the player jumps to almost the same height as before the jump</li>
+			<li>the player can only jump if he doesn't bounces off the block</li>
+			<li>added in version: beta 1.2</li>
+			<li>id: 14</li>
+		</ul>
+
+		<h4>half metal</h4>
+		<ul>
+			<li>you can place it in water</li>
+			<li>you can rotate it</li>
+			<li>added in version: beta 1.1</li>
+			<li>id: 28</li>
+		</ul>
+
+		<h4>yellow falling block</h4>
+		<ul>
+			<li>if the player touches it for more than 1 second, it will fall down</li>
+			<li>it falls until it hits a wall, then disappears and reappears in 2 seconds in its initial position</li>
+			<li>it can kill a player or slime if it falls on him</li>
+			<li>weights can activate it too</li>
+			<li>you can place it in water</li>
+			<li>added in version: beta 1.2</li>
+			<li>id: 45</li>
+		</ul>
+
+		<h4>red falling block</h4>
+		<ul>
+			<li>if the player touches it, after 1 second it will fall down</li>
+			<li>it falls until it hits a wall, then disappears and reappears in 2 seconds in its initial position</li>
+			<li>it can kill a player or slime if it falls on him</li>
+			<li>weights can activate it too</li>
+			<li>you can place it in water</li>
+			<li>added in version: beta 1.2</li>
+			<li>id: 46</li>
+		</ul>
+
+		<h4>blue/red switch</h4>
+		<ul>
+			<li>player can activate it by jumping from below</li>
+			<li>it can kill a slime, if player activate it and slime is above it</li>
+			<li>weights, stomps or moving saws can activate it too</li>
+			<li>if block is blue, blue blocks is solid and red blocks is dotted line and conversely</li>
+			<li>you can place it in water</li>
+			<li>added in version: beta 1.2</li>
+			<li>id: 51</li>
+		</ul>
+
+		<h4>blue block</h4>
+		<ul>
+			<li>it can kill a player, slime or weight if it's dotted block and became solid</li>
+			<li>if blue/red switch is blue, block is solid, if not, block is dotted line</li>
+			<li>if block is dotted line player can go through it, if not, player can't go through it</li>
+			<li>you can place it in water</li>
+			<li>added in version: beta 1.2</li>
+			<li>id: 52</li>
+		</ul>
+
+		<h4>red block</h4>
+		<ul>
+			<li>it can kill a player, slime or weight if it's dotted block and became solid</li>
+			<li>if blue/red switch is red, block is solid, if not, block is dotted line</li>
+			<li>if block is dotted line player can go through it, if not, player can't go through it</li>
+			<li>you can place it in water</li>
+			<li>added in version: beta 1.2</li>
+			<li>id: 53</li>
+		</ul>
+
+		<h4>timed block</h4>
+		<ul>
+			<li>every 3 second change to dotted line or solid block</li>
+			<li>if block is dotted line player can go through it, if not, player can't go through it</li>
+			<li>it can kill a player or slime if it's dotted block and became solid</li>
+			<li>you can place it in water</li>
+			<li>added in version: beta 1.2</li>
+			<li>id: 54</li>
+		</ul>
+
+		<h4>green block</h4>
+		<ul>
+			<li>if green button is activated, block change to dotted line, if not, block is solid</li>
+			<li>if block is dotted line player can go through it, if not, player can't go through it</li>
+			<li>it can kill a player or slime if it's dotted block and became solid</li>
+			<li>you can place it in water</li>
+			<li>added in version: beta 1.2</li>
+			<li>id: 56</li>
+		</ul>
+
+		<h4>dotted block</h4>
+		<ul>
+			<li>if green button is activated, block change to solid block, if not, block is dotted line</li>
+			<li>if block is dotted line player can go through it, if not, player can't go through it</li>
+			<li>it can kill a player or slime if it's dotted block and became solid</li>
+			<li>you can place it in water</li>
+			<li>added in version: beta 1.2</li>
+			<li>id: 57</li>
+		</ul>
+
+		<h4>half lift</h4>
+		<ul>
+			<li>it's a platform that moves back and forth in a horizontall or verticall direction</li>
+			<li>if player stands on it, player moves too</li>
+			<li>it can kill a player or slime when it squeezes him</li>
+			<li>you can place it in water</li>
+			<li>you can rotate it</li>
+			<li>added in version: beta 1.2</li>
+			<li>id: 61 & 62</li>
+		</ul>
+
+		<h4>lift</h4>
+		<ul>
+			<li>it's a platform that moves back and forth in a horizontall or verticall direction</li>
+			<li>if player stands on it, player moves too</li>
+			<li>it can kill a player or slime when it squeezes him</li>
+			<li>you can place it in water</li>
+			<li>you can rotate it</li>
+			<li>added in version: beta 1.2</li>
+			<li>id: 63</li>
+		</ul>
+
+		<h4>bridge lift</h4>
+		<ul>
+			<li>it's a semisolid platform that moves back and forth in a horizontall or verticall direction</li>
+			<li>player can jump through from below and land on the top</li>
+			<li>if player stands on it, player moves too</li>
+			<li>the player can drop down by presing down arrow or S</li>
+			<li>you can place it in water</li>
+			<li>you can rotate it</li>
+			<li>added in version: beta 1.2</li>
+			<li>id: 64</li>
+		</ul>
+
+		<h4 class="blockGroup" id="hazard">Hazard</h4>
+		<ul>
+			<li>danger - kill the player when he touches its</li>
+		</ul>
+
+		<h4>lava</h4>
+		<ul>
+			<li>added in version: pre-alpha 1.4</li>
+			<li>id: 3</li>
+		</ul>
+
+		<h4>spikes</h4>
+		<ul>
+			<li>you can place it in water</li>
+			<li>you can rotate it</li>
+			<li>added in version: beta 1.1</li>
+			<li>id: 24</li>
+		</ul>
+
+		<h4>two spikes</h4>
+		<ul>
+			<li>you can place it in water</li>
+			<li>you can rotate it</li>
+			<li>added in version: beta 1.1</li>
+			<li>id: 25</li>
+		</ul>
+
+		<h4>right spike</h4>
+		<ul>
+			<li>you can place it in water</li>
+			<li>you can rotate it</li>
+			<li>added in version: beta 1.1</li>
+			<li>id: 26</li>
+		</ul>
+
+		<h4>left spike</h4>
+		<ul>
+			<li>you can place it in water</li>
+			<li>you can rotate it</li>
+			<li>added in version: beta 1.1</li>
+			<li>id: 27</li>
+		</ul>
+
+		<h4>metal + spike</h4>
+		<ul>
+			<li>half of it is (metal) wall</li>
+			<li>half of it is (spikes) danger</li>
+			<li>you can place it in water</li>
+			<li>you can rotate it</li>
+			<li>added in version: beta 1.1</li>
+			<li>id: 29 & 30</li>
+		</ul>
+
+		<h4>half saw</h4>
+		<ul>
+			<li>you can place it in water</li>
+			<li>you can rotate it</li>
+			<li>added in version: beta 1.1</li>
+			<li>id: 31</li>
+		</ul>
+
+		<h4>saw</h4>
+		<ul>
+			<li>you can place it in water</li>
+			<li>added in version: beta 1.1</li>
+			<li>id: 32</li>
+		</ul>
+
+		<h4>moving half saw</h4>
+		<ul>
+			<li>moving block</li>
+			<li>if it hits a wall or a stopper, it bounces off and goes to the opposite side</li>
+			<li>you can place it in water</li>
+			<li>you can rotate it</li>
+			<li>added in version: beta 1.1</li>
+			<li>id: 34</li>
+		</ul>
+
+		<h4>moving saw</h4>
+		<ul>
+			<li>moving block</li>
+			<li>if it hits a wall or a stopper, it bounces off and goes to the opposite side</li>
+			<li>you can place it in water</li>
+			<li>you can rotate it</li>
+			<li>added in version: beta 1.1</li>
+			<li>id: 35</li>
+		</ul>
+
+		<h4>fire bar</h4>
+		<ul>
+			<li>fire balls rotate around the block</li>
+			<li>center of it is wall</li>
+			<li>fire balls is danger</li>
+			<li>you can rotate it</li>
+			<li>you can change its length by pressing L</li>
+			<li>added in version: beta 1.1</li>
+			<li>id: 38 & 39</li>
+		</ul>
+
+		<h4>rotating saw</h4>
+		<ul>
+			<li>saw rotate around the block</li>
+			<li>center of it is wall</li>
+			<li>saw is danger</li>
+			<li>you can rotate it</li>
+			<li>you can change its length by pressing L</li>
+			<li>added in version: beta 1.1</li>
+			<li>id: 40 & 41</li>
+		</ul>
+
+		<h4>pulling spikes</h4>
+		<ul>
+			<li>box with arrow is wall</li>
+			<li>spikes is danger</li>
+			<li>the thorns still pulling in and out</li>
+			<li>you can rotate it</li>
+			<li>added in version: beta 1.1</li>
+			<li>id: 42</li>
+		</ul>
+
+		<h4>stomp</h4>
+		<ul>
+			<li>metal is wall</li>
+			<li>spikes is danger</li>
+			<li>the stomp goes in that direction until it hits a wall or spopper, then slowly returns and waits for a while then the cycle repeats</li>
+			<li>you can rotate it</li>
+			<li>added in version: beta 1.1</li>
+			<li>id: 43</li>
+		</ul>
+
+		<h4>slime</h4>
+		<ul>
+			<li>you can kill it by stepping on it</li>
+			<li>gravity acts on it</li>
+			<li>if it hits wall, stopper or one way wall, it bounces off and goes to the opposite side</li>
+			<li>it can jump on trampolines</li>
+			<li>it can stand on bridge</li>
+			<li>can be killed also by squeezing or by lava</li>
+			<li>you can put ruby into it, then the player must kill slime, to get the ruby</li>
+			<li>if it's in water, it goes slower</li>
+			<li>you can place it in water</li>
+			<li>added in version: beta 1.1</li>
+			<li>id: 47</li>
+		</ul>
+
+		<h4>snow spike</h4>
+		<ul>
+			<li>you can place it in water</li>
+			<li>you can rotate it</li>
+			<li>added in version: beta 1.2</li>
+			<li>id: 48</li>
+		</ul>
+
+		<h4>little spike</h4>
+		<ul>
+			<li>you can place it in water</li>
+			<li>you can rotate it</li>
+			<li>added in version: beta 1.2</li>
+			<li>id: 49</li>
+		</ul>
+
+		<h4>big spike</h4>
+		<ul>
+			<li>you can place it in water</li>
+			<li>you can rotate it</li>
+			<li>added in version: beta 1.2</li>
+			<li>id: 50</li>
+		</ul>
+
+		<h4>weight</h4>
+		<ul>
+			<li>fall down from above when players is near it</li>
+			<li>if player is higher than it, it doesn't fall down, player can stands on it</li>
+			<li>the fall stops, when it hits the wall, after 2 seconds it returns to its original position</li>
+			<li>can kill the player or slime by squishing him</li>
+			<li>you can place it in water</li>
+			<li>added in version: beta 1.2</li>
+			<li>id: 66</li>
+		</ul>
+
+		<h4 class="blockGroup" id="decorations">Decorations</h4>
+		<ul>
+			<li>the player can go through this block</li>
+		</ul>
+
+		<h4>purple plant</h4>
+		<ul>
+			<li>added in version: beta 1.2</li>
+			<li>id: 15</li>
+		</ul>
+
+		<h4>sign exit</h4>
+		<ul>
+			<li>you can place it in water</li>
+			<li>added in version: alpha 1.3</li>
+			<li>id: 16</li>
+		</ul>
+
+		<h4>sign right</h4>
+		<ul>
+			<li>you can place it in water</li>
+			<li>you can rotate it</li>
+			<li>added in version: alpha 1.3</li>
+			<li>id: 17</li>
+		</ul>
+
+		<h4>sign left</h4>
+		<ul>
+			<li>you can place it in water</li>
+			<li>you can rotate it</li>
+			<li>added in version: alpha 1.3</li>
+			<li>id: 18</li>
+		</ul>
+
+		<h4>bush</h4>
+		<ul>
+			<li>added in version: alpha 1.3</li>
+			<li>id: 19</li>
+		</ul>
+
+		<h4>plant</h4>
+		<ul>
+			<li>added in version: alpha 1.3</li>
+			<li>id: 20</li>
+		</ul>
+
+		<h4>rock</h4>
+		<ul>
+			<li>added in version: alpha 1.3</li>
+			<li>id: 21</li>
+		</ul>
+
+		<h4>dark tape & light tape</h4>
+		<ul>
+			<li>suitable as a decoration for a moving saw</li>
+			<li>you can place it in water</li>
+			<li>you can rotate it</li>
+			<li>added in version: beta 1.1</li>
+			<li>id: 36 & 37</li>
+		</ul>
+
+		<h4>arrow</h4>
+		<ul>
+			<li>suitable for point players towards one of eight directions</li>
+			<li>you can place it in water</li>
+			<li>you can rotate it</li>
+			<li>added in version: beta 1.2</li>
+			<li>id: 60</li>
+		</ul>
+
+		<h4>green cane</h4>
+		<ul>
+			<li>added in version: beta 1.2</li>
+			<li>id: 69</li>
+		</ul>
+
+		<h4>red cane</h4>
+		<ul>
+			<li>added in version: beta 1.2</li>
+			<li>id: 70</li>
+		</ul>
+
+		<h4>frozen tree</h4>
+		<ul>
+			<li>added in version: beta 1.2</li>
+			<li>id: 71</li>
+		</ul>
+
+		<h4>frozen plant</h4>
+		<ul>
+			<li>added in version: beta 1.2</li>
+			<li>id: 72 & 73</li>
+		</ul>
+
+		<h4>snow rock</h4>
+		<ul>
+			<li>added in version: beta 1.2</li>
+			<li>id: 74 & 75</li>
+		</ul>
+
+		<h4>snow hill</h4>
+		<ul>
+			<li>added in version: beta 1.2</li>
+			<li>id: 76</li>
+		</ul>
+
+		<h4>big green cane</h4>
+		<ul>
+			<li>added in version: beta 1.2</li>
+			<li>id: 77</li>
+		</ul>
+
+		<h4>big red cane</h4>
+		<ul>
+			<li>added in version: beta 1.2</li>
+			<li>id: 78</li>
+		</ul>
+
+		<h4>small snowy pile</h4>
+		<ul>
+			<li>added in version: beta 1.2</li>
+			<li>id: 79</li>
+		</ul>
+
+		<h4>snowy pile</h4>
+		<ul>
+			<li>added in version: beta 1.2</li>
+			<li>id: 80</li>
+		</ul>
+
+		<h4 class="blockGroup" id="other">Other</h4>
+
+		<h4>check point</h4>
+		<ul>
+			<li>if the player touches the blue checkpoint, checkpoint became gren</li>
+			<li>if player dies, he spawns at the checkpoint position</li>
+			<li>you can place it in water</li>
+			<li>you can rotate it</li>
+			<li>added in version: pre-alpha 1.5</li>
+			<li>id: 4</li>
+		</ul>
+
+		<h4>trampoline</h4>
+		<ul>
+			<li>when the player touches it, it flies up to a height of 6 blocks</li>
+			<li>added in version: alpha 1.0</li>
+			<li>id: 6</li>
+		</ul>
+
+		<h4>ladder</h4>
+		<ul>
+			<li>player can go up and down</li>
+			<li>added in version: alpha 1.1</li>
+			<li>id: 7</li>
+		</ul>
+
+		<h4>water</h4>
+		<ul>
+			<li>if the player doesn't go up, he goes slowly down</li>
+			<li>player can go up</li>
+			<li>added in version: alpha 1.1</li>
+			<li>id: 9</li>
+		</ul>
+
+		<h4>start</h4>
+		<ul>
+			<li>at the beginning of the level, the player spawn at this block</li>
+			<li>if player didn't touches a checkpoint and die, he spawn at start</li>
+			<li>you can place it in water</li>
+			<li>block can be only one</li>
+			<li>added in version: alpha 1.4</li>
+			<li>id: 22</li>
+		</ul>
+
+		<h4>exit</h4>
+		<ul>
+			<li>if the player touches this block, he completes a level</li>
+			<li>if you are testing a level, you will switch to creative mode</li>
+			<li>if you are in play mode, nothing will happen</li>
+			<li>block can be only one</li>
+			<li>added in version: alpha 1.4</li>
+			<li>id: 23</li>
+		</ul>
+
+		<h4>stopper</h4>
+		<ul>
+			<li>bounces moving blocks</li>
+			<li>player can see it only in creator mode</li>
+			<li>acts on slimes, moving saws, lifts, weights, stomps, yellow falling blocks and red falling blocks</li>
+			<li>you can place it in water</li>
+			<li>added in version: beta 1.1</li>
+			<li>id: 33</li>
+		</ul>
+
+		<h4>half stopper</h4>
+		<ul>
+			<li>bounces moving blocks</li>
+			<li>player can see it only in creator mode</li>
+			<li>you can place it in water</li>
+			<li>you can rotate it</li>
+			<li>added in version: beta 1.1</li>
+			<li>id: 44</li>
+		</ul>
+
+		<h4>green button</h4>
+		<ul>
+			<li>player can activate it by jump on it</li>
+			<li>change green dotted lines to solid blocks and conversely for 5 seconds</li>
+			<li>after 2 seconds after the activation button disappears</li>
+			<li>weights, slimes or falling blocks can activate it too</li>
+			<li>you can place it in water</li>
+			<li>you can rotate it</li>
+			<li>added in version: beta 1.2</li>
+			<li>id: 55</li>
+		</ul>
+
+		<h4>bridge</h4>
+		<ul>
+			<li>a semisolid platform that player can jump through from below and land on the top</li>
+			<li>the player can drop down by presing down arrow or S</li>
+			<li>you can place it in water</li>
+			<li>added in version: beta 1.2</li>
+			<li>id: 58</li>
+		</ul>
+
+		<h4>booster</h4>
+		<ul>
+			<li>boost the player to the side indicated by the arrows</li>
+			<li>you can place it in water</li>
+			<li>you can rotate it</li>
+			<li>added in version: beta 1.2</li>
+			<li>id: 59</li>
+		</ul>
+
+		<h4>ruby</h4>
+		<ul>
+			<li>player needs to collect all the rubies to go to exit</li>
+			<li>it can be put into slime, then the player must kill slime, to get the ruby</li>
+			<li>you can place it in water</li>
+			<li>added in version: beta 1.2</li>
+			<li>id: 65</li>
+		</ul>
+
+		<h4>one way wall</h4>
+		<ul>
+			<li>the player can go in a certain direction but not in the opposite direction</li>
+			<li>also acts on slimes, moving saws, lifts, weights, stomps, yellow falling blocks and red falling blocks</li>
+			<li>you can place it in water</li>
+			<li>you can rotate it</li>
+			<li>added in version: beta 1.2</li>
+			<li>id: 68</li>
+		</ul>
+
+		<h3 id="credits">Credits</h3>
+		<h4>textures</h4>
+		<ul>
+			<li><a href="https://opengameart.org/content/platformer-art-complete-pack-often-updated">platformer art complete pack</a></li>
+			<!-- <a href="https://opengameart.org/content/platformer-art-extended-tilesets">platformer art extended tilesets</a><br> -->
+			<li><a href="https://opengameart.org/content/platformer-pack-industrial-100">platformer pack industrial</a></li>
+			<!-- <a href="https://opengameart.org/content/abstract-platformer">abstract platformer</a> -->
+		</ul>
+		<h4>sounds</h4>
+		<ul>
+			<li><a href="https://www.youtube.com/watch?v=wjXytFUpj8M&t=10s">Xaf - Nebula</a></li>
+			<li><a href="https://scratch.mit.edu/">sound effects</a></li>
+		</ul>
+		<!-- <h4>inspiration</h4>
+		<ul>
+			<li>super mario maker 2</li>
+			<li><a href="https://scratch.mit.edu/projects/60917032/fullscreen/">Appel</a></li>
+		</ul> -->
+	</main>
+	
+	<footer>
+		<p>© 2020 - 2021 Dan games</p>
+	</footer>
+</body>
+</html>
