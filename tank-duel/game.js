@@ -21,7 +21,7 @@ let on, off, music;
 // arrays
 let explodedBoxes = [];
 // const
-const hp = 5, speed = 2, ViewRuler = true;
+const hp = 5, speed = 2, ViewRuler = false;
 
 setCanvas (960, 540);
 
